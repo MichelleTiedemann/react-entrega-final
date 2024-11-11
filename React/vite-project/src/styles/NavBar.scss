@@ -1,0 +1,153 @@
+/* Estilos para el NavBar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2e1a46; /* Color violeta */
+  display: flex;
+  justify-content: space-around; /* Distribuye los elementos a lo largo */
+  align-items: center;
+}
+
+li {
+  float: none; /* Elimina el float para mejor control */
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+  border-radius: 6px; /* Bordes redondeados */
+}
+
+li a:hover {
+  background-color: #4a2e68; /* Tonalidad más oscura del violeta */
+  color: #f3e9ff; /* Un blanco suave para el hover */
+}
+
+/* Estilos para las tarjetas de categorías */
+.item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  width: 250px;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 8px; /* Redondea las esquinas de las imágenes */
+}
+
+h2 {
+  font-size: 30px;
+  color: #2e1a46;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 8px;
+  color: #000000; /* Un gris suave */
+}
+
+span {
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #2e1a46;
+}
+
+button {
+  background-color: #2e1a46; /* Color violeta para botones */
+  color: white;
+  border: none;
+  padding: 10px 15px; /* Un poco más de padding */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 14px;
+
+  &:hover {
+    background-color: #4a2e68;
+    transform: translateY(-2px); /* Efecto de levantamiento */
+  }
+}
+
+/* Estilos para la lista de productos */
+.item-list-container {
+  padding: 20px;
+
+  .item-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los items */
+  }
+}
+
+/* Checkout.css */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #2e1a46; /* Usa el color violeta */
+  box-shadow: 0 0 5px rgba(46, 26, 70, 0.3);
+}
+
+.cart-icon-container {
+  padding-top: 50px;
+}
+.cart-icon {
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+}
+
+.cart-counter {
+  color: #ffffff;
+  background-color: red;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 0.9rem;
+  padding-top: 0.08rem;
+  position: relative;
+  bottom: 70px;
+  left: 30px;
+}
