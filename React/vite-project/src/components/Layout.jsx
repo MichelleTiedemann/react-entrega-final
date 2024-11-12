@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../styles/navbar.scss";
+import NavBar from "./NavBar";
 import { useCart } from "./CartContext";
 
 const Layout = ({ children }) => {
