@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { db } from "../firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
 import Item from "./Item";
-import "../styles/navbar.scss";
+import "../styles/NavBar.scss";
 import { ProductsContext } from "../context/ProductsContextProvider";
 
 const ItemListContainer = ({ category }) => {
